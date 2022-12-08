@@ -1,5 +1,12 @@
 # README
 
+<%= @movies.each do |movie| %>
+        <img src= <%= movie.poster_url %>>
+        <%= movie.title %>
+        <%= movie.overview %>
+        <%= movie.rating %>
+<% end %>
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
